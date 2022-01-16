@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.main {
+    height: 785px;
+    background: url(../img/capa.png) center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.main-child {
+    z-index: 1;
+}
+
+.main h1 {
+    font-size: 64px;
+    max-width: 510px;
+}
+
+.gradient {
+    background:rgba(0, 0, 0, .4); /*gradiente simples */
+    background-image: linear-gradient( to top,
+    rgba(0, 0, 0, .8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, .8) 100%); /* gradiente para escurecer as bordas do container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
